@@ -1,0 +1,256 @@
+.content{
+   width:1192px;
+   margin:0 auto;
+}
+
+/* 头部 */
+#top_wrapper{
+    background:#e3e4e6;
+    height:30px;
+}
+.top{
+    background:#e3e4e6;
+    height:30px;
+    position:relative;
+}
+.top ul{
+   float:right;
+}
+.top ul li{
+    float:left;
+    line-height:30px;
+    margin:0 10px;
+}
+/* 头部 */
+.header{
+    height:620px;
+    position:relative;
+}
+.header .nav{
+    width:192px;
+    height:650px;
+    background:#fff;
+    position:absolute;
+    left:0;
+    top:-30px;
+}
+.header .nav .nav_top{
+    display:block;
+    height:169px;
+    border-bottom:solid 1px #ebebeb;
+    position:relative;
+}
+
+.header .nav .nav_top .go-look{
+    display:none;
+    position:absolute;
+    top:38%;
+    left:0;
+    width:100%;
+    text-align:center;
+}
+
+.header .nav  .nav_top .go-look p:nth-child(1){
+      color:#0397c8;
+      line-height:36px;
+      font-size:16px;
+}
+.header .nav  .nav_top .go-look p:nth-child(2) span{
+    display:inline-block;
+    width:64px;
+    height:24px;
+    line-height:24px;
+    background:#5dd7ff;
+    border-radius:10px;
+    color:#fff;
+}
+/* 搜索框区域 */
+
+.search-box{
+    float:right;
+    width:1000px;
+    height:148px;
+}
+.search-box div:nth-child(1){
+    overflow:hidden;
+}
+.search-box .search{
+    width:546px;
+    height:57px;
+    float:left;
+    margin-left:128px;
+    margin-top:24px;
+}
+.search-box .search input{
+    width:496px;
+    height:36px;
+    border:none;
+    border-radius:3px;
+    padding-left:4px;
+    float:left;
+}
+.search-box .search button{
+    outline:none;
+    width:50px;
+    height:36px;
+    border:none;
+    background:#f80017;
+    margin-left:-4px;
+    float:left;
+}
+/* 购物车 */
+.search-box .gwz{
+    width:188px;
+    height:32px;
+    border:#e2e2e2 solid 1px;
+    background:#fff;
+    float:right;
+    margin-top:24px;
+    margin-right:96px;
+    text-align:center;
+    line-height:32px;
+}
+
+/* 搜索框下的导航 */
+.search-box ul{
+    float:left;
+    margin-left:15px; 
+    margin-top:27px;
+}
+.search-box ul li{
+    float:left;
+     margin:0 15px; 
+}
+.search-box .home{
+    width:190px;
+    height:40px;
+    background:#fff;
+    float:right;
+    line-height:40px;
+    text-align:center;
+    margin-top:10px;
+}
+/* 京东二维码 */
+.test_triangle_border{
+    width:68px; 
+    height:68px;
+    position:absolute;
+    top:30px;
+    right:0;
+}
+
+.test_triangle_border .popup{
+    width:63px;
+    height:63px;
+    background:#fff; 
+    padding-left:3px;
+    padding-top:3px;
+    color:#333;  
+    position:absolute; 
+    border:1px solid #333;
+    z-index:10;
+}
+.test_triangle_border .popup img{
+    width:60px;
+    height:60px;
+    margin-bottom:0;
+}
+.test_triangle_border .popup span{
+    display:block; 
+    width:0; 
+    height:0; 
+    border-width:0 6px 6px; 
+    border-style:solid; 
+    border-color:transparent transparent #333; 
+    position:absolute; 
+    top:-6px; 
+    left:54%;/* 三角形居中显示 */
+    margin-left:-10px;/* 三角形居中显示 */
+    z-index:1;
+}
+.test_triangle_border .popup em{
+    display:block; 
+    width:0; 
+    height:0; 
+    border-width:0 10px 10px; 
+    border-style:solid; 
+    border-color:transparent transparent #fff; 
+    position:absolute; 
+    top:1px; 
+    left:-10px;
+    z-index:10;
+}
+/* 焦点图 */
+.banner-box{
+    width:990px;
+    height:470px;
+    float:right;
+    padding-left:10px;
+    position:relative;
+}
+.banner-box .banner{
+    width:590px;
+    height:470px;
+    position:relative;
+    overflow:hidden;
+    float:left;
+}
+.banner-box .banner ul:nth-child(1){
+    width:9999999999px;
+    position:absolute;
+    left:0;
+    top:0;
+}
+.banner-box .banner ul:nth-child(1) li{
+    float:left;
+}
+.banner-box .banner ul:nth-child(2){
+    width:590px;
+    position:absolute;
+    bottom:16px;
+    margin-left:43px;
+}
+.banner-box .banner ul:nth-child(2) li{
+    float:left;
+    width:5px;;
+    height:5px;
+    margin:0 4px;
+    border-radius:50%;
+    border:2px solid rgba(255,255,255,.5);
+}
+.banner-box .banner .btn{
+    width:590px;
+    position:absolute;
+    top:50%;
+    display:flex;
+    justify-content:space-between;
+}
+.banner-box .banner .btn button{
+    width:26px;
+    height:40px;
+    outline:none;
+    border:none;
+    opacity:.5;
+}
+/* 小图 */
+.banner-box .xiaoImg{
+    margin-left:10px;
+    float:left;
+    width:195px;
+    height:470px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+.banner-box .xiaoImg a{
+    display:block;
+    width:190px;
+    height:150px;
+}
+/* 登录面板 */
+.register-box{
+    width:190px;
+    height:470px;
+    float:right;
+    background:#fff;
+}
