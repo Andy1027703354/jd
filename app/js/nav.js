@@ -1,8 +1,9 @@
 var nav = (function () {
     var gou,
-        flag,
+        flag = true,
         go_look,
         timer,
+        tim,
         nav_top,
         obj;
     return {
@@ -11,7 +12,6 @@ var nav = (function () {
             gou = obj.querySelector('#gou');
             go_look = obj.querySelector('.go-look');
             nav_top = obj.querySelector('.nav_top');
-            flag = true;
             this.event();
         },
         event() {
@@ -33,12 +33,18 @@ var nav = (function () {
                 e = e || event;
                 e.stopPropagation();
                 e.preventDefault();
-                if (flag == false) {
-                    //clearTimeout(timer);
-                    flag = true;
-                    gou.src = 'img/gou.png';
-                    go_look.style.display = 'none';
-                }
+                tim = setInterval(function(){
+                    if (flag == false) {
+                        //clearTimeout(timer);
+                        timer = setTimeout(() => {
+                            go_look.style.display = 'block';
+                        }, 2000)
+                        gou.src = 'img/gou.png';
+                        go_look.style.display = 'none';
+                        flag = true;
+                    }
+                },3000)
+                
             }
         },
         autoplay() {
