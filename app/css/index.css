@@ -470,6 +470,8 @@
 }
 /* 排行榜 */
 .ran-nav{
+    width:390px;
+    height:390px;
     position:relative;
 }
 .ran-box h2{
@@ -527,23 +529,28 @@
     color:#e33333;
 }
 .ran-box .ran-ul{
-    padding-left:20px;
-    padding-right:20px;
-    position:relative;
+    /* padding-left:20px;
+    padding-right:20px; */
+    position: relative;
+    width:350px;
     height:348px;
     overflow:hidden;
+    margin-left:20px;
+    display:none;
 }
-.ran-box .ran-ul-box{
+.ran-box .ran-ul .ran-ul-box{
     position:absolute;
     top:0;
     left:0;
     width:99999px;
-    height:321px;
+    height:348px;
 }
 .ran-box .ran-ul-box ul{
+    width:350px;
+    height:321px;
     border-bottom:1px solid #f5f5f5;
     float:left;
-    margin-left:22px;
+    /* margin-left:22px; */
 }
 .ran-box .ran-ul-box ul li a{
     display:block;
@@ -579,7 +586,7 @@
     left:0;
     bottom:0;
     width:352px;
-    height:36px;
+    height:20px;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -598,8 +605,8 @@
     border:4px solid #fdd9dd;
     background:#eb3436;
 }
-.ran-ul{
-    display:none;
+.ran-box .ran-ul-block{
+    display:block;
 }
 /* 觅me 发现好货 会逛 */
 .mime{
