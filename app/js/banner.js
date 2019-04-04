@@ -614,6 +614,7 @@ class RanNav5{
         }, 3000);
     }
 }
+
 window.onload = function () {
     new Banner().imgshow('.banner');
     new Li2().event();

@@ -64,6 +64,58 @@
     border-radius:10px;
     color:#fff;
 }
+.header .nav  .nav_bottom{
+    padding-top:5px;
+    width:192px;
+    height:475px;
+    display:flex;
+    justify-content:center;
+    position:relative;
+    overflow:hidden;
+}
+
+.header .nav  .nav_bottom ul li a{
+    line-height:26px;
+}
+.header .nav  .nav_bottom ul li{
+    width:182px;
+    padding-left:30px;
+}
+.header .nav  .nav_bottom ul li:hover{
+    background:#eee;
+}
+
+.header .nav  .nav_bottom ul li a:hover{
+    color:red;
+}
+.header .nav .hide{
+    position:absolute;
+    left:192px;
+    top:0;
+    width:983px;
+    min-height:458px;
+    background:#fff;
+    border:1px solid #f7f7f7;
+    z-index:10;
+    padding-left:15px;
+    padding-top:20px;
+    /* display:none; */
+}
+.header .hide ol li:nth-child(1) a{
+    display:inline-block;
+    width:80px;
+    height:30px;
+    background:black;
+    color:#fff;
+    text-align:center;
+    line-height:30px;
+    margin:0 10px;
+    margin-bottom:20px;
+}
+.header .hide ol li a{
+    margin:0 10px;
+    line-height:30px;
+}
 /* 搜索框区域 */
 
 .search-box{
@@ -254,7 +306,83 @@
     float:right;
     background:#fff;
 }
+.register-box .user_inner div:nth-child(1){
+    width:80px;
+    height:80px;
+    border:7px solid #eee;
+     border-radius:50%;  
+     position:relative;
+     top:-14px;
+     left:25%;
+}
+.register-box .user_inner div:nth-child(1) img{
+    width:80px;
+    height:80px;
+     border-radius:50%;  
+}
+.register-box .user_inner div:nth-child(2) p{
+   text-align:center;
+   font-size:12px;
+}
+.register-box .user_inner div:nth-child(2) p a{
+    text-align:center;
+    font-size:12px;
+ }
+.register-box .user_inner div:nth-child(3) p{
+    text-align:center;
+    font-size:12px;
+ }
+ .register-box .user_inner div:nth-child(3) p a:nth-child(1){
+    display:inline-block;
+    width:72px;
+    height:22px;
+    background:#eee;
+    border-radius:10px;
+ }
+ .register-box .user_inner div:nth-child(3) p a:nth-child(2){
+    display:inline-block;
+    width:72px;
+    height:22px;
+    background:#000;
+    border-radius:10px;
+    color:#e5d790;
+ }
 
+ .register-box .news{
+     width:161px;
+     height:128px;
+     border-bottom:1px #333 solid;
+     margin-left:15px;
+     padding-top:10px;
+ }
+
+.register-box .news p:nth-child(1){
+    margin-bottom:6px;
+}
+.register-box .news p:nth-child(1) span:nth-child(2){
+    float:right;
+}
+.register-box .service{
+    width:161px;
+    height:150px;
+    margin-left:15px;
+}
+.register-box .service ul{
+    width:161px;
+    height:150px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+.register-box .service ul li{
+    width:40px;
+    height:50px;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:flex-end;
+    font-size:12px;
+}
 /* 网页主体 */
 .sprite_seckill{
     background:url(../img/sprite.seckill.png) no-repeat;
